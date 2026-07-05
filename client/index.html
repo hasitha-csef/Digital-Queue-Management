@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QueueCare</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>🏥 QueueCare</h1>
+        <p>Real-Time Digital Queue Management System</p>
+    </header>
+
+    <div class="stats">
+        <div class="box">
+            <h3>Current Token</h3>
+            <h2 id="currentToken">--</h2>
+        </div>
+
+        <div class="box">
+            <h3>Patients Waiting</h3>
+            <h2 id="waitingCount">0</h2>
+        </div>
+    </div>
+
+    <div class="card">
+
+        <h2>Patient Registration</h2>
+
+        <input type="text" id="name" placeholder="Enter Patient Name">
+
+        <button onclick="generateToken()">Generate Token</button>
+
+        <h3 id="token"></h3>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Live Queue</h2>
+
+        <ul id="queue"></ul>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Admin Panel</h2>
+
+        <button onclick="nextPatient()">Serve Next Patient</button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+<footer>
+    <p>© 2026 QueueCare | Smart Digital Queue Management</p>
+</footer>
+</body>
+</html>

@@ -1,4 +1,4 @@
-const API = "https://digital-queue-management-9nt5.onrender.com/api";
+const API = "/api";
 // Generate Token
 async function generateToken() {
 
